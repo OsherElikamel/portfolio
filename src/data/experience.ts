@@ -36,6 +36,15 @@ export const experience: Experience[] = [
     ],
   },
   {
+    company: 'Sela College',
+    role: 'Software Development Course',
+    period: '2023 – 2024',
+    highlights: [
+      'Intensive full-stack program covering frontend, backend, and infrastructure',
+      'Graduated with a GPA of 96',
+    ],
+  },
+  {
     company: 'Artillery Corps, IDF',
     role: 'Sergeant, Team Leader',
     period: '2020 – 2022',

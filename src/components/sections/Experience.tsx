@@ -9,6 +9,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
 import Paper from '@mui/material/Paper';
 import SectionTitle from '../common/SectionTitle';
 import ScrollReveal from '../common/ScrollReveal';
@@ -41,7 +42,7 @@ export default function Experience() {
               <TimelineSeparator>
                 <TimelineConnector sx={{ bgcolor: 'primary.light' }} />
                 <TimelineDot color="primary">
-                  <WorkIcon />
+                  {exp.company === 'Sela College' ? <SchoolIcon /> : <WorkIcon />}
                 </TimelineDot>
                 <TimelineConnector sx={{ bgcolor: 'primary.light' }} />
               </TimelineSeparator>
