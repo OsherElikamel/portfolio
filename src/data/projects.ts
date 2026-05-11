@@ -32,4 +32,12 @@ export const projects: Project[] = [
     github: 'https://github.com/OsherElikamel/live-code-classroom',
     featured: true,
   },
+  {
+    title: 'DocChat',
+    description:
+      'Upload a document and chat with its content using AI. Uses RAG to retrieve relevant chunks, then generates grounded answers with Llama 3.3 70B via Groq.',
+    tech: ['React', 'TypeScript', 'FastAPI', 'Groq', 'MUI'],
+    github: 'https://github.com/OsherElikamel/docchat',
+    featured: true,
+  },
 ];
