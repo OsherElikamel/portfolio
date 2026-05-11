@@ -11,9 +11,9 @@ export default function ThemeToggle({ isDark, onToggle }: ThemeToggleProps) {
   return (
     <IconButton
       onClick={onToggle}
-      color="inherit"
       aria-label="Toggle dark mode"
       sx={{
+        color: 'text.primary',
         transition: 'transform 300ms ease-in-out',
         '&:hover': { transform: 'rotate(30deg)' },
       }}
