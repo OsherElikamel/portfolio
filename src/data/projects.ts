@@ -35,7 +35,7 @@ export const projects: Project[] = [
   {
     title: 'DocChat',
     description:
-      'Upload a document and chat with its content using AI. Uses RAG to retrieve relevant chunks, then generates grounded answers with Llama 3.3 70B via Groq.',
+      'Upload a document and chat with its content using AI. Uses RAG to retrieve relevant chunks, then generates grounded answers with Llama 3.3 70B via Groq. Supports PDF, TXT, and Markdown files with a polished chat interface and dark/light mode.',
     tech: ['React', 'TypeScript', 'FastAPI', 'Groq', 'MUI'],
     github: 'https://github.com/OsherElikamel/docchat',
     featured: true,
