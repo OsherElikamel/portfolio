@@ -4,7 +4,7 @@ Personal developer portfolio showcasing my projects, experience, and technical s
 
 ## Live Site
 
-Hosted as a static site on Render (coming soon).
+**https://portfolio-62ys.onrender.com**
 
 ## Sections
 
