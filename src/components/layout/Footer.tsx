@@ -53,7 +53,7 @@ export default function Footer() {
             </IconButton>
             <IconButton
               size="small"
-              href={`mailto:${personal.email}`}
+              href={`mailto:${personal.email}?subject=Hi%20Osher!&body=Hey%20Osher,%0A%0A`}
               sx={{ color: 'text.secondary' }}
             >
               <EmailIcon fontSize="small" />

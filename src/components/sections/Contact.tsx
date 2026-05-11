@@ -38,7 +38,7 @@ export default function Contact() {
               variant="contained"
               size="large"
               startIcon={<EmailIcon />}
-              href={`mailto:${personal.email}`}
+              href={`mailto:${personal.email}?subject=Hi%20Osher!&body=Hey%20Osher,%0A%0A`}
               sx={{ mb: 4 }}
             >
               Say Hello
@@ -74,7 +74,7 @@ export default function Contact() {
                 <LinkedInIcon />
               </IconButton>
               <IconButton
-                href={`mailto:${personal.email}`}
+                href={`mailto:${personal.email}?subject=Hi%20Osher!&body=Hey%20Osher,%0A%0A`}
                 sx={{
                   color: 'text.secondary',
                   border: 1,
