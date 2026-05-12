@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, useCallback } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { lightTheme, darkTheme } from './theme/theme';
@@ -12,13 +12,25 @@ import Experience from './components/sections/Experience';
 import Contact from './components/sections/Contact';
 
 export default function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => localStorage.getItem('theme') === 'dark');
   const theme = useMemo(() => (isDark ? darkTheme : lightTheme), [isDark]);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  }, [isDark]);
+
+  const toggleTheme = useCallback(() => {
+    setIsDark((d) => {
+      const next = !d;
+      localStorage.setItem('theme', next ? 'dark' : 'light');
+      return next;
+    });
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Navbar isDark={isDark} onToggleTheme={() => setIsDark((d) => !d)} />
+      <Navbar isDark={isDark} onToggleTheme={toggleTheme} />
       <main>
         <Hero />
         <About />

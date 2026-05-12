@@ -38,6 +38,7 @@ export default function Footer() {
               href={`https://github.com/${personal.github}`}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
               sx={{ color: 'text.secondary' }}
             >
               <GitHubIcon fontSize="small" />
@@ -47,6 +48,7 @@ export default function Footer() {
               href={`https://linkedin.com/in/${personal.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
               sx={{ color: 'text.secondary' }}
             >
               <LinkedInIcon fontSize="small" />
@@ -54,6 +56,7 @@ export default function Footer() {
             <IconButton
               size="small"
               href={`mailto:${personal.email}?subject=Hi%20Osher!&body=Hey%20Osher,%0A%0A`}
+              aria-label="Email"
               sx={{ color: 'text.secondary' }}
             >
               <EmailIcon fontSize="small" />

@@ -58,6 +58,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       size="small"
+                      aria-label={`${project.title} on GitHub`}
                       sx={{ color: 'text.secondary' }}
                     >
                       <GitHubIcon />
@@ -70,6 +71,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       size="small"
+                      aria-label={`${project.title} live demo`}
                       sx={{ color: 'text.secondary' }}
                     >
                       <LaunchIcon />

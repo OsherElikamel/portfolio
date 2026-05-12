@@ -28,8 +28,8 @@ export default function About() {
             <Avatar
               src={personal.avatarUrl}
               sx={{
-                width: 220,
-                height: 220,
+                width: { xs: 160, sm: 220 },
+                height: { xs: 160, sm: 220 },
                 borderRadius: '24px',
                 bgcolor: 'primary.light',
                 fontSize: '4rem',
@@ -51,6 +51,7 @@ export default function About() {
                   display: 'flex',
                   gap: 3,
                   flexWrap: 'wrap',
+                  justifyContent: { xs: 'center', md: 'flex-start' },
                 }}
               >
                 {[

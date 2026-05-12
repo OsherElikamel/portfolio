@@ -1,6 +1,8 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -16,6 +18,9 @@ import ScrollReveal from '../common/ScrollReveal';
 import { experience } from '../../data/experience';
 
 export default function Experience() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
   return (
     <Box component="section" id="experience" sx={{ py: 10, bgcolor: 'background.default' }}>
       <Container maxWidth="lg">
@@ -23,7 +28,7 @@ export default function Experience() {
           <SectionTitle title="Experience" subtitle="My professional journey" />
         </ScrollReveal>
 
-        <Timeline position="alternate">
+        <Timeline position={isMobile ? "right" : "alternate"}>
           {experience.map((exp, i) => (
             <TimelineItem key={exp.company + exp.period}>
               <TimelineOppositeContent

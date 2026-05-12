@@ -49,6 +49,7 @@ export default function Contact() {
                 href={`https://github.com/${personal.github}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
                 sx={{
                   color: 'text.secondary',
                   border: 1,
@@ -63,6 +64,7 @@ export default function Contact() {
                 href={`https://linkedin.com/in/${personal.linkedin}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
                 sx={{
                   color: 'text.secondary',
                   border: 1,
@@ -75,6 +77,7 @@ export default function Contact() {
               </IconButton>
               <IconButton
                 href={`mailto:${personal.email}?subject=Hi%20Osher!&body=Hey%20Osher,%0A%0A`}
+                aria-label="Email"
                 sx={{
                   color: 'text.secondary',
                   border: 1,
