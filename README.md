@@ -2,7 +2,9 @@
 
 Personal developer portfolio showcasing my projects, experience, and technical skills. Built as a single-page application with React, TypeScript, and Material UI.
 
-[![Portfolio demo](docs/demo.gif)](https://osher-elikamel.onrender.com)
+**[Live Site](https://osher-elikamel.onrender.com)**
+
+![Portfolio demo](docs/demo.gif)
 
 ## Sections
 
