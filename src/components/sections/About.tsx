@@ -26,6 +26,7 @@ export default function About() {
             }}
           >
             <Avatar
+              alt={personal.name}
               src={personal.avatarUrl}
               sx={{
                 width: { xs: 160, sm: 220 },

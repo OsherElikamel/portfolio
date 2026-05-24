@@ -51,10 +51,12 @@ export default function Navbar({ isDark, onToggleTheme }: NavbarProps) {
         elevation={0}
         sx={{
           backdropFilter: 'blur(12px)',
-          backgroundColor: (t) =>
-            t.palette.mode === 'light'
-              ? 'rgba(255, 253, 249, 0.8)'
-              : 'rgba(26, 18, 16, 0.8)',
+          backgroundColor: (t) => {
+            const bg = t.palette.background.default;
+            return bg.startsWith('#')
+              ? `${bg}cc`
+              : bg;
+          },
           borderBottom: 1,
           borderColor: 'divider',
         }}

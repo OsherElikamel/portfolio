@@ -14,8 +14,8 @@ export default function Hero() {
         alignItems: 'center',
         background: (t) =>
           t.palette.mode === 'light'
-            ? 'linear-gradient(135deg, #FFFDF9 0%, #F5F0E8 50%, #E8DDD0 100%)'
-            : 'linear-gradient(135deg, #1A1210 0%, #2C1E16 50%, #1A1210 100%)',
+            ? `linear-gradient(135deg, ${t.palette.background.default} 0%, ${t.palette.secondary.main} 50%, ${t.palette.primary.light} 100%)`
+            : `linear-gradient(135deg, ${t.palette.background.default} 0%, ${t.palette.background.paper} 50%, ${t.palette.background.default} 100%)`,
       }}
     >
       <Container maxWidth="md">
