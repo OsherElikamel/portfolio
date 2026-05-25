@@ -2,9 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 
 export function useScrollReveal(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const prefersReduced = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const [isVisible, setIsVisible] = useState(prefersReduced);
 
   useEffect(() => {
+    if (prefersReduced) return;
+
     const node = ref.current;
     if (!node) return;
 
@@ -20,7 +23,7 @@ export function useScrollReveal(threshold = 0.15) {
 
     observer.observe(node);
     return () => observer.disconnect();
-  }, [threshold]);
+  }, [threshold, prefersReduced]);
 
   return { ref, isVisible };
 }

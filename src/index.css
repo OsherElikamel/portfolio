@@ -24,3 +24,13 @@ body {
 html[data-theme="dark"] * {
   scrollbar-color: #6f4e37 transparent;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
