@@ -66,6 +66,7 @@ export default function Navbar({ isDark, onToggleTheme }: NavbarProps) {
             variant="h6"
             component="a"
             href="#"
+            aria-label="Back to top"
             sx={{
               flexGrow: 1,
               color: 'text.primary',
@@ -101,7 +102,7 @@ export default function Navbar({ isDark, onToggleTheme }: NavbarProps) {
           {/* Mobile nav */}
           <Box sx={{ display: { xs: 'flex', md: 'none' }, alignItems: 'center', gap: 0.5 }}>
             <ThemeToggle isDark={isDark} onToggle={onToggleTheme} />
-            <IconButton color="inherit" onClick={() => setDrawerOpen(true)} sx={{ color: 'text.primary' }}>
+            <IconButton aria-label="open menu" onClick={() => setDrawerOpen(true)} sx={{ color: 'text.primary' }}>
               <MenuIcon />
             </IconButton>
           </Box>
