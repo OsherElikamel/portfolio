@@ -40,4 +40,12 @@ export const projects: Project[] = [
     github: 'https://github.com/OsherElikamel/docchat',
     featured: true,
   },
+  {
+    title: 'PayTag Kiosk',
+    description:
+      'A desktop self-checkout kiosk simulator built with Flutter. Simulates the full retail flow: RFID tag scanning, item display, payment processing, and detailed logging. Supports multiple stores, bilingual UI (English/Hebrew), and configurable payment methods.',
+    tech: ['Flutter', 'Dart', 'Provider', 'Excel'],
+    github: 'https://github.com/OsherElikamel/kiosk-payment-demo',
+    featured: true,
+  },
 ];
