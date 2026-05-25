@@ -41,6 +41,15 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: 'Portfolio',
+    description:
+      'This website. A responsive developer portfolio built with React and Material UI, featuring dark/light theming, scroll-reveal animations, and a bento grid layout.',
+    tech: ['React', 'TypeScript', 'MUI', 'Vite'],
+    github: 'https://github.com/OsherElikamel/portfolio',
+    live: 'https://osher-elikamel.onrender.com',
+    featured: true,
+  },
+  {
     title: 'PayTag Kiosk',
     description:
       'A desktop self-checkout kiosk simulator built with Flutter. Simulates the full retail flow: RFID tag scanning, item display, payment processing, and detailed logging. Supports multiple stores, bilingual UI (English/Hebrew), and configurable payment methods.',
