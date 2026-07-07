@@ -4,17 +4,16 @@ export interface Project {
   tech: string[];
   github?: string;
   live?: string;
-  featured?: boolean;
 }
 
 export const projects: Project[] = [
   {
     title: 'DevBoard',
     description:
-      'A full-stack developer dashboard for tracking projects, tasks, and progress. Features a Kanban board with drag-and-drop, project management, voting system, and a polished dark/light UI.',
+      'A full-stack developer dashboard for tracking projects, tasks, tech stacks, and learning notes. Features JWT auth with rate limiting, a fully interactive guest demo mode, task priorities and comments, and a polished dark/light UI.',
     tech: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Docker'],
     github: 'https://github.com/OsherElikamel/devboard',
-    featured: true,
+    live: 'https://devboard-frontend-tagh.onrender.com',
   },
   {
     title: 'AI Crypto Dashboard',
@@ -22,7 +21,6 @@ export const projects: Project[] = [
       'AI-powered crypto dashboard with real-time news, market insights, meme feed, and coin tracking. Integrates multiple AI and crypto APIs into a unified interface.',
     tech: ['React', 'TypeScript', 'Express', 'MongoDB', 'MUI'],
     github: 'https://github.com/OsherElikamel/ai-crypto-dashboard',
-    featured: true,
   },
   {
     title: 'Live Code Classroom',
@@ -30,7 +28,6 @@ export const projects: Project[] = [
       'A real-time coding classroom where mentors observe students solving JavaScript exercises. Features live code sync via WebSockets, Monaco Editor, and instant solution checking with confetti.',
     tech: ['React', 'TypeScript', 'Socket.IO', 'MongoDB', 'Monaco Editor'],
     github: 'https://github.com/OsherElikamel/live-code-classroom',
-    featured: true,
   },
   {
     title: 'DocChat',
@@ -38,7 +35,6 @@ export const projects: Project[] = [
       'Upload a document and chat with its content using AI. Uses RAG to retrieve relevant chunks, then generates grounded answers with Llama 3.3 70B via Groq. Supports PDF, TXT, and Markdown files with a polished chat interface and dark/light mode.',
     tech: ['React', 'TypeScript', 'FastAPI', 'Groq', 'MUI'],
     github: 'https://github.com/OsherElikamel/docchat',
-    featured: true,
   },
   {
     title: 'PayTag Kiosk',
@@ -46,7 +42,6 @@ export const projects: Project[] = [
       'A Flutter desktop self-checkout kiosk simulator. Covers the full retail flow from RFID scanning to payment, with multi-store support, bilingual UI, and payment logging.',
     tech: ['Flutter', 'Dart', 'Provider', 'Excel'],
     github: 'https://github.com/OsherElikamel/kiosk-payment-demo',
-    featured: true,
   },
   {
     title: 'Portfolio',
@@ -55,6 +50,5 @@ export const projects: Project[] = [
     tech: ['React', 'TypeScript', 'MUI', 'Vite'],
     github: 'https://github.com/OsherElikamel/portfolio',
     live: 'https://osher-elikamel.onrender.com',
-    featured: true,
   },
 ];

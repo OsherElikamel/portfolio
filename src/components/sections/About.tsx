@@ -74,7 +74,7 @@ export default function About() {
                     }}
                   >
                     <Typography variant="h4" color="primary" sx={{ fontWeight: 700 }}>
-                      {stat.value}+
+                      {stat.value}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       {stat.label}

@@ -9,11 +9,11 @@ export const experience: Experience[] = [
   {
     company: 'PayTag',
     role: 'Full-Stack Developer',
-    period: 'Dec 2025 – Jun 2026',
+    period: 'Dec 2025 – Jul 2026',
     highlights: [
-      'Extend and maintain a production Flutter/Dart self-checkout kiosk application, including integrations with internal services and external APIs',
-      'Maintain and extend an Ansible-based automation system, using shell and Python scripts to deploy and configure software across client machines remotely',
-      'Work in Linux environments, handling system configuration, caching, and log analysis to troubleshoot production issues',
+      'Extended and maintained a production Flutter/Dart self-checkout kiosk application, including integrations with internal services and external APIs',
+      'Maintained and extended an Ansible-based automation system, using shell and Python scripts to deploy and configure software across client machines remotely',
+      'Worked in Linux environments, handling system configuration, caching, and log analysis to troubleshoot production issues',
     ],
   },
   {
