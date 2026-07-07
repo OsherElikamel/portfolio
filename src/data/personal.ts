@@ -5,7 +5,7 @@ import { skills } from './skills';
 export const personal = {
   name: 'Osher Elikamel',
   title: 'Full-Stack Developer',
-  tagline: 'Building production systems across backend, frontend, and infrastructure',
+  tagline: 'I take products from idea to deployed — backend, frontend, and the infrastructure in between',
   bio: `Full-Stack Developer with hands-on experience shipping production systems across backend, frontend, and infrastructure. I work with Python/FastAPI, Node.js, React, and Flutter, with a focus on system integration, automation, and Linux environments.
 
 I use AI-assisted development tools (Claude Code, Cursor) as a core part of how I build — accelerating delivery without compromising code quality. Currently open to new Full-Stack roles.`,
