@@ -23,6 +23,24 @@ export default function Projects() {
           {projects.map((project, i) => (
             <ScrollReveal key={project.title} delay={i * 150}>
               <BentoCard sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+                {project.image && (
+                  <Box
+                    component="img"
+                    src={project.image}
+                    alt={`${project.title} screenshot`}
+                    loading="lazy"
+                    sx={{
+                      width: '100%',
+                      aspectRatio: '16 / 9',
+                      objectFit: 'cover',
+                      objectPosition: 'top',
+                      borderRadius: '12px',
+                      border: 1,
+                      borderColor: 'divider',
+                      mb: 2,
+                    }}
+                  />
+                )}
                 <Typography variant="h5" gutterBottom>
                   {project.title}
                 </Typography>
