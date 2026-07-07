@@ -48,9 +48,9 @@ export const projects: Project[] = [
     image: docchatImg,
   },
   {
-    title: 'PayTag Kiosk',
+    title: 'Self-Checkout Kiosk',
     description:
-      'A Flutter desktop self-checkout kiosk simulator. Covers the full retail flow from RFID scanning to payment, with multi-store support, bilingual UI, and payment logging.',
+      'A Flutter desktop self-checkout kiosk simulator, built from my production kiosk work at PayTag. Covers the full retail flow from RFID scanning to payment, with multi-store support, bilingual UI, and payment logging.',
     tech: ['Flutter', 'Dart', 'Provider', 'Excel'],
     github: 'https://github.com/OsherElikamel/kiosk-payment-demo',
     image: kioskImg,
