@@ -9,9 +9,9 @@ Personal developer portfolio showcasing my projects, experience, and technical s
 ## Sections
 
 - **Hero** - Introduction with call-to-action buttons
-- **About** - Bio, photo, and quick stats
+- **About** - Bio, photo, and quick stats (derived from the data files)
+- **Projects** - Featured work with screenshots, descriptions, tech stacks, GitHub and live-demo links
 - **Skills & Tech** - Organized by category: Frontend, Backend, Infrastructure & Databases, Tools & AI
-- **Projects** - Featured work with descriptions, tech stacks, and GitHub links
 - **Experience** - Professional timeline: PayTag, Gilon, Vayyar, and military service
 - **Contact** - Email, GitHub, and LinkedIn links
 - **Resume** - Downloadable PDF from the navbar
@@ -28,11 +28,11 @@ Personal developer portfolio showcasing my projects, experience, and technical s
 ## Features
 
 - Dark / light mode toggle with smooth transitions
-- Scroll-reveal animations on all sections
+- Scroll-reveal animations on all sections (respects reduced-motion preferences)
 - Responsive layout with mobile navigation drawer
-- Bento grid design for skills and projects
-- Resume download button in the navbar
-- Live GitHub profile links on all projects
+- Bento grid design with project screenshots
+- One-click resume download in the navbar
+- GitHub and live-demo links on project cards
 
 ## Quick Start
 
