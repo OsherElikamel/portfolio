@@ -22,10 +22,7 @@ export default function Projects() {
         <BentoGrid columns={2}>
           {projects.map((project, i) => (
             <ScrollReveal key={project.title} delay={i * 150}>
-              <BentoCard
-                span={project.featured ? { cols: 1 } : undefined}
-                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-              >
+              <BentoCard sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                 <Typography variant="h5" gutterBottom>
                   {project.title}
                 </Typography>
