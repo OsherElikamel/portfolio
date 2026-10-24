@@ -1,4 +1,5 @@
 import devboardImg from '../assets/projects/devboard.png';
+import cartwiseImg from '../assets/projects/cartwise.png';
 import aiCryptoImg from '../assets/projects/ai-crypto.png';
 import classroomImg from '../assets/projects/live-code-classroom.png';
 import docchatImg from '../assets/projects/docchat.png';
@@ -22,6 +23,15 @@ export const projects: Project[] = [
     github: 'https://github.com/OsherElikamel/devboard',
     image: devboardImg,
     live: 'https://devboard-frontend-tagh.onrender.com',
+  },
+  {
+    title: 'CartWise',
+    description:
+      'Type a grocery list in plain Hebrew and get the cheapest basket across four Israeli supermarket chains, using the price files every chain must publish by law. AI reads the list and picks among real products only; when it is unsure, the user confirms. Daily price ingestion, a no-AI fallback, and a bilingual RTL interface.',
+    tech: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Gemini'],
+    github: 'https://github.com/OsherElikamel/cartwise',
+    image: cartwiseImg,
+    live: 'https://cartwise-vmn4.onrender.com',
   },
   {
     title: 'AI Crypto Dashboard',
