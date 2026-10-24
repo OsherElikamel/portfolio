@@ -44,7 +44,7 @@ export default function Experience() {
                   pb: { xs: 3, md: 4 },
                 }}
               >
-                {/* period — desktop only, opposite the card */}
+                {/* period: desktop only, opposite the card */}
                 <Typography
                   variant="body2"
                   color="text.secondary"
