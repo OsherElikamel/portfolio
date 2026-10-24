@@ -16,7 +16,7 @@ I use AI-assisted development tools (Claude Code, Cursor) as a core part of how 
   resumePath: '/resume.pdf',
   avatarUrl: avatarImg,
   stats: {
-    yearsExperience: '2+',
+    yearsExperience: '2',
     projectsCompleted: String(projects.length),
     technologiesUsed: String(skills.length),
   },
